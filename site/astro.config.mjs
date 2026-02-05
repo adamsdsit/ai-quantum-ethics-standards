@@ -10,6 +10,7 @@ export default defineConfig({
       social: {
         github: "https://github.com/adamsdsit/ai-quantum-ethics-standards"
       },
+      customCss: ["./src/styles/custom.css"],
       defaultLocale: "en",
       sidebar: [
         {
