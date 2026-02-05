@@ -25,3 +25,6 @@
 
 Each standard document should follow the template in `00_foundations/standard_template.md`.
 
+## Visual Guide
+
+See `diagrams/use_and_contribute.d2` for a high-level flow of how to use the corpus and how to contribute changes.
