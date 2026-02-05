@@ -23,7 +23,7 @@
 
 .diagram-link {
   display: block;
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .diagram-link img {
@@ -32,40 +32,6 @@
   border: 1px solid rgba(109, 40, 217, 0.35);
   border-radius: 12px;
   background: #ffffff;
-}
-
-.diagram-lightbox {
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background: rgba(17, 24, 39, 0.75);
-  z-index: 9999;
-}
-
-.diagram-lightbox:target {
-  display: flex;
-}
-
-.diagram-lightbox img {
-  max-width: 95vw;
-  max-height: 95vh;
-  width: auto;
-  height: auto;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-}
-
-.diagram-lightbox .close {
-  position: absolute;
-  top: 1rem;
-  right: 1.25rem;
-  font-size: 2rem;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .diagram-open-link {
