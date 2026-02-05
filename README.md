@@ -41,7 +41,7 @@ Rendered SVGs are in `diagrams/rendered/` and their D2 sources are in `diagrams/
 
 There is an optional docs UI (Astro Starlight) in `site/` that renders the corpus with navigation and search.
 
-- Local (Docker): `docker compose up site-dev`
+- Local (Docker): `docker compose up site-dev` (defaults to `http://localhost:43210`; override with `SITE_PORT=...`)
 - Cloudflare Pages: set Root directory to `site`, Build command `npm run build`, Output `dist`
 
 ## Contributing

@@ -29,6 +29,13 @@ From the repo root:
 docker compose up site-dev
 ```
 
+By default, the dev site binds to `http://localhost:43210` (host port) and proxies to container port `4321`.
+To override the host port:
+
+```bash
+SITE_PORT=43211 docker compose up site-dev
+```
+
 Build the static site into `site/dist`:
 
 ```bash
