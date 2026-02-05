@@ -7,6 +7,9 @@ export default defineConfig({
     starlight({
       title: "AI + Quantum Ethics Standards",
       description: "A living, auditable standards corpus for AI and quantum computing.",
+      social: {
+        github: "https://github.com/adamsdsit/ai-quantum-ethics-standards"
+      },
       defaultLocale: "en",
       sidebar: [
         {
@@ -29,4 +32,3 @@ export default defineConfig({
     })
   ]
 });
-
