@@ -4,6 +4,8 @@
 
 Define a certification approach that provides credible assurance while avoiding “ethics washing.”
 
+This document provides the baseline certification concept. The detailed labeling and certification-level scheme is defined in `05_audit_and_assurance/certification_and_labeling.md`.
+
 ## Ethical Mapping
 
 - `A4 Trustworthiness`
@@ -40,4 +42,3 @@ CE-3 (Revocation). Certifications **MUST** be revocable upon:
 - certification report with scope and exclusions
 - auditor attestations and evidence index
 - revocation policy and historical revocation log (if any)
-
