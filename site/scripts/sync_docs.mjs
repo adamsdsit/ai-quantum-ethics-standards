@@ -75,7 +75,9 @@ async function writeDoc(destPath, sourcePath, rawMarkdown) {
   const inferredTitle = extractH1(rawMarkdown) ?? titleFromFilename(filename);
   const body = stripLeadingH1(rawMarkdown);
 
-  const out = `---\ntitle: ${JSON.stringify(inferredTitle)}\n---\n\n${body}\n`;
+  // Starlight reads optional `sidebar.hidden`. Some versions assume `sidebar` exists,
+  // so we include an empty object to avoid undefined access in navigation generation.
+  const out = `---\ntitle: ${JSON.stringify(inferredTitle)}\nsidebar: {}\n---\n\n${body}\n`;
   await fs.mkdir(path.dirname(destPath), { recursive: true });
   await fs.writeFile(destPath, out, "utf8");
 }
