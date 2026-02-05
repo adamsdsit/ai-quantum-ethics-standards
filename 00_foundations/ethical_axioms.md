@@ -1,6 +1,10 @@
 # Ethical Axioms (Layer 0)
 
-These axioms are the normative anchor for all standards in this corpus. Each standard **MUST** map its requirements to one or more axioms.
+## Purpose & Scope
+
+This document defines a small, durable set of ethical axioms that serve as the normative anchor for all AI and quantum computing (QC) standards in this corpus.
+
+Each standard **MUST** map its normative requirements to one or more axioms in this document.
 
 ## A1 — Unity & Social Cohesion
 
@@ -30,3 +34,23 @@ Governance **MUST** be participatory, transparent, and multi-stakeholder. Affect
 
 Systems **MUST** account for societal disruption and environmental impacts, including energy, materials, and downstream effects.
 
+## Interpretation Rules
+
+IR-1 (Normative Priority). These axioms are normative anchors. When a standard introduces requirements, it **MUST**:
+
+- identify the axioms it supports, and
+- explain how compliance evidence demonstrates those axioms in practice.
+
+IR-2 (Tradeoffs). Where axioms appear to be in tension in a specific context, a standard **MUST** document:
+
+- the tradeoff,
+- the risk-tier implications, and
+- the compensating controls used to preserve dignity, justice, and safety.
+
+IR-3 (Stability). Changes to this document **SHOULD** be rare. Any change that materially alters the meaning or scope of an axiom **MUST** be treated as a MAJOR change to the corpus.
+
+## Relationship to Technical Standards
+
+- Technical standards define testable requirements and auditable evidence artifacts.
+- Ethical axioms define the ethical objectives those requirements must advance.
+- A technical requirement with no axiom mapping is incomplete and **MUST NOT** be adopted as normative.
