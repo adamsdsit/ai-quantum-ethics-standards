@@ -55,6 +55,8 @@ EP-3 (Non-Waivable Safeguards). Even under emergency invocation, organizations *
 - prohibition boundaries in `02_ai_standards/autonomy_and_human_control.md` related to coercion/manipulation and illusion of control,
 - minimum privacy protections against unauthorized inference for Tier 2–3 (`02_ai_standards/privacy_and_non_inference.md`) unless a documented, lawful, and proportionate exception is approved with compensating controls.
 
+These constraints are reinforced by the non-derogation red lines in `00_foundations/non_derogation_and_red_lines.md`.
+
 EP-4 (Oversight and Dual Authorization). For Tier 2–3 exceptional use, invocation **MUST** require:
 
 - dual authorization (at least two accountable roles), and
@@ -143,4 +145,3 @@ Emergency powers are necessary in rare cases, but they are predictable abuse vec
 ## Change Log
 
 - v0.1: Initial draft.
-
