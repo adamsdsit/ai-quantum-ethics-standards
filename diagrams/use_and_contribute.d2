@@ -1,4 +1,4 @@
-direction: down
+direction: right
 
 title: "How to Use + Contribute to the Standards (AI + Quantum)"
 
@@ -10,85 +10,64 @@ style: {
   stroke-width: 2
 }
 
-legend: {
+legend: "Key artifacts\n00_foundations/ethical_axioms.md\n04_risk_framework/control_matrix.md\n00_foundations/standard_template.md\nETHICAL_TRACEABILITY.md\nVERSIONING.md" {
   style: {
     fill: "#F1F5F9"
     stroke: "#94A3B8"
     font-color: "#334155"
     font-size: 16
   }
-  "Key artifacts": {
-    "Ethical axioms": "00_foundations/ethical_axioms.md"
-    "Control matrix": "04_risk_framework/control_matrix.md"
-    "Templates": "00_foundations/standard_template.md"
-    "Traceability": "ETHICAL_TRACEABILITY.md"
-    "Versioning": "VERSIONING.md"
-  }
 }
 
-"Using the standards": {
+"Use the standards": {
+  direction: down
   style: { fill: "#F5F3FF"; stroke: "#C4B5FD"; font-color: "#2E1065" }
 
-  start_use: "Start: applying the corpus" {
+  use_start: "Start" {
     shape: circle
     style: { fill: "#EDE9FE"; stroke: "#5B21B6" }
   }
 
-  read_foundations: "Read foundations\n- Charter\n- Ethical Axioms\n- Definitions\n- Scope"
+  use_1: "1. Read foundations"
+  use_2: "2. Classify risk tier"
+  use_3: "3. Select controls"
+  use_4: "4. Implement controls"
+  use_5: "5. Evidence package"
+  use_6: "6. Audit / certify"
 
-  classify_tier: "Classify risk tier\n(Tier 0–3)\n+ write tiering record"
-
-  pick_controls: "Select controls\nvia Control Matrix\n+ domain standards"
-
-  implement_controls: "Implement controls\n(tech + process)\n- oversight\n- logging\n- monitoring\n- disclosure"
-
-  evidence_pack: "Collect evidence artifacts\nfor audits/certification\n- reports\n- logs\n- runbooks\n- registers"
-
-  assure: "Audit / certification\n(if Tier 2–3)\n+ remediation loop"
-
-  start_use -> read_foundations -> classify_tier -> pick_controls -> implement_controls -> evidence_pack -> assure
+  use_start -> use_1 -> use_2 -> use_3 -> use_4 -> use_5 -> use_6
 }
 
-"Contributing to the corpus": {
+"Contribute to the corpus": {
+  direction: down
   style: { fill: "#F5F3FF"; stroke: "#C4B5FD"; font-color: "#2E1065" }
 
-  start_contrib: "Start: propose a change" {
+  con_start: "Start" {
     shape: circle
     style: { fill: "#EDE9FE"; stroke: "#5B21B6" }
   }
 
-  choose_type: "Choose change type\n- new standard\n- modify requirement\n- case study\n- governance/policy\n- clarification"
-
-  map_axioms: "Map to Ethical Axioms\n(A1–A7)\n+ explain why"
-
-  assess_tier: "State tier impact\n(Tier 0–3)\n+ identify affected docs"
-
-  decision_review: "Review intensity?\nTier 0–1 vs Tier 2–3" {
+  con_1: "1. Choose change type"
+  con_2: "2. Map to axioms"
+  con_3: "3. State tier impact"
+  con_gate: "Review intensity?" {
     shape: diamond
     style: { fill: "#E9D5FF"; stroke: "#5B21B6" }
   }
+  con_4: "4. Draft/update doc"
+  con_5: "5. Traceability + links"
+  con_6: "6. Version intent"
+  con_7: "7. Open PR / issue"
+  con_low: "Tier 0–1 review"
+  con_high: "Tier 2–3 review"
+  con_merge: "Merge + release notes"
 
-  draft_standard: "Draft/Update doc\nusing template\n(keep requirements testable)"
-
-  add_traceability: "Add Traceability Table\n(requirement → axiom → evidence)\n+ update evidence section"
-
-  update_cross_links: "Update cross-links\nas needed\n- control matrix\n- crosswalk\n- README map"
-
-  versioning: "Apply change control\n- changelog\n- versioning intent\n(MAJOR/MINOR/PATCH)"
-
-  open_pr: "Open PR / Issue\nInclude:\n- axiom mapping\n- tier impact\n- evidence expectations\n- migration notes"
-
-  review_low: "Review (Tier 0–1)\n- maintainer + reviewer\n- focus: clarity + auditability"
-
-  review_high: "Review (Tier 2–3)\n- multi-review\n- affected-party input\n- dual-use / systemic risk checks"
-
-  merge_release: "Merge + release notes\nTag version as needed\n+ keep decision record"
-
-  start_contrib -> choose_type -> map_axioms -> assess_tier -> decision_review -> draft_standard -> add_traceability -> update_cross_links -> versioning -> open_pr
-
-  decision_review -> review_low: "Tier 0–1"
-  decision_review -> review_high: "Tier 2–3"
-
-  open_pr -> review_low -> merge_release
-  open_pr -> review_high -> merge_release
+  con_start -> con_1 -> con_2 -> con_3 -> con_gate -> con_4 -> con_5 -> con_6 -> con_7
+  con_gate -> con_low: "Tier 0–1"
+  con_gate -> con_high: "Tier 2–3"
+  con_7 -> con_low -> con_merge
+  con_7 -> con_high -> con_merge
 }
+
+legend -> "Use the standards"
+legend -> "Contribute to the corpus"
