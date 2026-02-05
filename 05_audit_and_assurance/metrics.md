@@ -4,6 +4,8 @@
 
 Provide a baseline metric set that supports transparency, fairness, safety, and stewardship without implying that metrics alone guarantee ethical outcomes.
 
+This file defines a minimum metric set. Requirements and constraints on ethical quantification (including prohibited single-score ratings and uncertainty disclosure) are defined in `04_risk_framework/ethical_metrics.md`.
+
 ## Ethical Mapping
 
 - `A4 Trustworthiness`
@@ -49,4 +51,3 @@ Provide a baseline metric set that supports transparency, fairness, safety, and 
 - metric definitions and calculation methods
 - dashboards and time-series exports
 - decision memos showing how metrics trigger action
-

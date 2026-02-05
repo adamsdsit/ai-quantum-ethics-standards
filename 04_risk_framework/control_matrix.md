@@ -21,6 +21,8 @@ This matrix links core control domains to tiers and to standard documents.
 | Crypto Destabilization | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/cryptographic_and_security_risk.md` |
 | Dual-Use Governance | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/national_security.md`, `03_quantum_standards/research_limits.md` |
 | Moratorium Capability | MAY | MAY | SHOULD | MUST | `03_quantum_standards/research_limits.md` |
+| Ethical Metrics | SHOULD | SHOULD | MUST | MUST | `04_risk_framework/ethical_metrics.md`, `05_audit_and_assurance/metrics.md` |
+| AI–Quantum Convergence | SHOULD | SHOULD | MUST (as applicable) | MUST (as applicable) | `04_risk_framework/ai_quantum_convergence.md` |
 | Audit & Assurance | MAY | SHOULD | MUST | MUST | `05_audit_and_assurance/*` |
 | Environmental/Societal Impact | SHOULD | SHOULD | MUST | MUST | `01_governance/environmental_and_resource_ethics.md`, `05_audit_and_assurance/metrics.md` |
 
