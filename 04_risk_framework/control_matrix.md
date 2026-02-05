@@ -12,7 +12,7 @@ This matrix links core control domains to tiers and to standard documents.
 | Control Domain | Tier 0 | Tier 1 | Tier 2 | Tier 3 | Primary Standards |
 | --- | --- | --- | --- | --- | --- |
 | Transparency & Explainability | SHOULD | MUST | MUST | MUST | `02_ai_standards/transparency_and_explainability.md` |
-| Bias/Fairness | SHOULD | SHOULD | MUST | MUST | `02_ai_standards/fairness.md` |
+| Bias/Fairness | SHOULD | SHOULD | MUST | MUST | `02_ai_standards/fairness_and_justice.md` |
 | Safety & Security | SHOULD | MUST | MUST | MUST | `02_ai_standards/safety.md` |
 | Accountability & Traceability | SHOULD | MUST | MUST | MUST | `02_ai_standards/accountability.md` |
 | Consultation | SHOULD | SHOULD | MUST | MUST | `01_governance/consultation_framework.md` |

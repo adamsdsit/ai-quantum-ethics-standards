@@ -42,7 +42,7 @@ The OECD AI Principles emphasize inclusive growth, human-centered values, transp
 
 | OECD Principle Theme | Related Corpus Areas |
 | --- | --- |
-| Human-centered values and fairness | `00_foundations/ethical_axioms.md` (A1–A3), `02_ai_standards/fairness.md` |
+| Human-centered values and fairness | `00_foundations/ethical_axioms.md` (A1–A3), `02_ai_standards/fairness_and_justice.md` |
 | Transparency and responsible disclosure | `02_ai_standards/transparency_and_explainability.md`, `03_quantum_standards/cryptographic_and_security_risk.md` (claim controls) |
 | Robustness, security, and safety | `02_ai_standards/safety.md`, `03_quantum_standards/national_security.md` |
 | Accountability | `02_ai_standards/accountability.md`, `05_audit_and_assurance/*` |
@@ -67,4 +67,3 @@ UNESCO’s recommendation addresses human rights, transparency, accountability, 
 ## Maintenance
 
 Crosswalk updates **SHOULD** accompany MINOR releases when new standards are added or when external frameworks materially evolve.
-

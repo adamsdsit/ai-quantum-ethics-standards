@@ -11,7 +11,7 @@ Tier 2 (high-impact societal).
 ## Applicable Standards
 
 - Transparency: `02_ai_standards/transparency_and_explainability.md`
-- Fairness: `02_ai_standards/fairness.md`
+- Fairness: `02_ai_standards/fairness_and_justice.md`
 - Safety: `02_ai_standards/safety.md`
 - Accountability: `02_ai_standards/accountability.md`
 - Consultation: `01_governance/consultation_framework.md`
