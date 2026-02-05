@@ -61,4 +61,4 @@ Transparency is not a single feature; it is a bundle of artifacts and practices 
 
 ## 8. Change Log
 
-- v0.1: Initial draft (filename: transparency_and_explainability.md).
+- v0.1: Initial draft (filename: `02_ai_standards/transparency_and_explainability.md`).

@@ -79,3 +79,9 @@ When deprecating a requirement or standard:
   - new standards added,
   - deprecated controls and sunset timelines.
 
+## Visual Summary (Non-normative)
+
+See:
+
+- `diagrams/release_pipeline.d2` (source)
+- `diagrams/rendered/release_pipeline.svg` (rendered)

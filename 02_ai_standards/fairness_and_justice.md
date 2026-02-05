@@ -178,4 +178,4 @@ Fairness is operationalized through context-specific constraints, evaluation, mo
 
 ## Change Log
 
-- v0.2: Expanded fairness standard; renamed to `fairness_and_justice.md`; added traceability, tiering, and prohibited practices.
+- v0.2: Expanded fairness standard; renamed to `02_ai_standards/fairness_and_justice.md`; added traceability, tiering, and prohibited practices.

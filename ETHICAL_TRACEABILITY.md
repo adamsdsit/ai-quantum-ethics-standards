@@ -71,3 +71,9 @@ ET-3 (Auditability of Mapping). Tier 2–3 programs **SHOULD** maintain a machin
 - PR descriptions and review records showing mapping decisions
 - optional traceability index generation outputs
 
+## Visual Summary (Non-normative)
+
+See:
+
+- `diagrams/traceability_flow.d2` (source)
+- `diagrams/rendered/traceability_flow.svg` (rendered)

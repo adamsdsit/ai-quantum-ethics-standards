@@ -33,6 +33,10 @@ This corpus uses the normative terms **MUST**, **SHOULD**, and **MAY** as descri
 - Additional governance and risk frameworks: `04_risk_framework/ethical_metrics.md`, `04_risk_framework/ai_quantum_convergence.md`, `01_governance/emergency_powers_and_safeguards.md`, `01_governance/independent_ethics_review.md`, `01_governance/pathway_to_adoption.md`
 - Non-normative interpretive notes: `99_interpretive_notes/founders_commentary.md`
 
+## Diagrams
+
+Rendered SVGs are in `diagrams/rendered/` and their D2 sources are in `diagrams/`.
+
 ## Contributing
 
 See `CONTRIBUTING.md`. Contributions should:

@@ -1,0 +1,69 @@
+direction: right
+
+title: "Change Control + Releases (Versioning Discipline)"
+
+style: {
+  fill: "#0f172a"
+  stroke: "#334155"
+  font-color: "#e2e8f0"
+}
+
+start: "Start: propose change\n(Issue/PR)" {
+  shape: circle
+  style: { fill: "#1e293b"; stroke: "#64748b" }
+}
+
+classify: "Classify change\nMAJOR / MINOR / PATCH\n+ tier impact" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+review_gate: "Review intensity?" {
+  shape: diamond
+  style: { fill: "#0b1220"; stroke: "#94a3b8" }
+}
+
+patch: "PATCH\n- editor/clarity\n- no meaning change" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+minor: "MINOR\n- new standard\n- non-breaking requirements\n- cross-link updates" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+major: "MAJOR\n- axioms or risk philosophy\n- breaking compliance\n- public rationale\n+ migration guidance" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+merge: "Merge\n+ decision record" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+tag: "Tag release\nvX.Y.Z" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+notes: "Publish release notes\n- normative deltas\n- deprecations/sunsets\n- migration notes" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+maintenance: "Post-release maintenance\n- update crosswalks\n- update diagrams/docs\n- track issues" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+start -> classify -> review_gate
+review_gate -> patch: "PATCH"
+review_gate -> minor: "MINOR"
+review_gate -> major: "MAJOR"
+
+patch -> merge
+minor -> merge
+major -> merge
+
+merge -> tag -> notes -> maintenance
+
+refs: "Key references\n\nVERSIONING.md\n01_governance/governance_model.md\nCONTRIBUTING.md\nETHICAL_TRACEABILITY.md" {
+  style: { fill: "#0b1220"; stroke: "#64748b"; font-color: "#e2e8f0" }
+}
+
+classify -> refs: { style.stroke-dash: 4 }
+

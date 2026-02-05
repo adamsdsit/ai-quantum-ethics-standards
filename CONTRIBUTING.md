@@ -19,7 +19,7 @@
 
 - **Backwards compatibility**: when tightening a MUST, document transition guidance.
 - **Safety-first**: if there is a conflict between usability and safety, document the tradeoff explicitly.
-- **Minimal ambiguity**: define terms (or reference `definitions.md`) instead of using overloaded language.
+- **Minimal ambiguity**: define terms (or reference `00_foundations/definitions.md`) instead of using overloaded language.
 
 ## Style
 
@@ -29,6 +29,8 @@ Each standard document should follow the template in `00_foundations/standard_te
 
 See:
 
-- `diagrams/use_flow.d2` (how to apply the corpus to a system)
-- `diagrams/contribute_flow.d2` (how to propose, review, and release changes)
-- `diagrams/use_and_contribute.d2` (combined overview)
+- `diagrams/use_flow.d2` (source) and `diagrams/rendered/use_flow.svg` (rendered): how to apply the corpus to a system
+- `diagrams/contribute_flow.d2` (source) and `diagrams/rendered/contribute_flow.svg` (rendered): how to propose, review, and release changes
+- `diagrams/use_and_contribute.d2` (source) and `diagrams/rendered/use_and_contribute.svg` (rendered): combined overview
+- `diagrams/release_pipeline.d2` (source) and `diagrams/rendered/release_pipeline.svg` (rendered): versioning and release discipline
+- `diagrams/traceability_flow.d2` (source) and `diagrams/rendered/traceability_flow.svg` (rendered): axiom → requirement → evidence traceability

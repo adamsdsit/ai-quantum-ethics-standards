@@ -59,4 +59,4 @@ Cryptography is a systemic dependency. The goal is not to freeze innovation, but
 
 ## 8. Change Log
 
-- v0.1: Initial draft (filename: cryptographic_and_security_risk.md).
+- v0.1: Initial draft (filename: `03_quantum_standards/cryptographic_and_security_risk.md`).

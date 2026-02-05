@@ -1,0 +1,45 @@
+direction: right
+
+title: "Ethical Traceability (Axioms → Requirements → Evidence)"
+
+style: {
+  fill: "#0f172a"
+  stroke: "#334155"
+  font-color: "#e2e8f0"
+}
+
+axioms: "Ethical Axioms\n(A1–A7)\nLayer 0" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+standards: "Standards documents\n(Governance / AI / Quantum)\nNormative requirements" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+reqs: "Requirement IDs\n(MUST/SHOULD/MAY)\nTestable statements" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+evidence: "Compliance evidence\n(artifacts + logs + tests)\nAuditable" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+assurance: "Assurance\n- audits\n- certification\n- findings → remediation" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+governance: "Governance loop\n- issues/PRs\n- review thresholds\n- versioning\n- decision records" {
+  style: { fill: "#111827"; stroke: "#475569" }
+}
+
+axioms -> standards -> reqs -> evidence -> assurance
+assurance -> governance: "feedback"
+governance -> standards: "updates"
+standards -> axioms: "must map"
+
+note: "Key rule\n\nNo orphan requirements:\nEvery requirement maps to one or more axioms\nand specifies evidence artifacts.\n\nEthics is enforceable only through\ntraceability + auditability." {
+  style: { fill: "#0b1220"; stroke: "#64748b"; font-color: "#e2e8f0" }
+}
+
+reqs -> note: { style.stroke-dash: 4 }
+
