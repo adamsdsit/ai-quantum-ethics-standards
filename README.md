@@ -37,6 +37,13 @@ This corpus uses the normative terms **MUST**, **SHOULD**, and **MAY** as descri
 
 Rendered SVGs are in `diagrams/rendered/` and their D2 sources are in `diagrams/`.
 
+## Docs Site
+
+There is an optional docs UI (Astro Starlight) in `site/` that renders the corpus with navigation and search.
+
+- Local (Docker): `docker compose up site-dev`
+- Cloudflare Pages: set Root directory to `site`, Build command `npm run build`, Output `dist`
+
 ## Contributing
 
 See `CONTRIBUTING.md`. Contributions should:

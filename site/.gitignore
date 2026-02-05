@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+public/diagrams/
+src/content/docs/00_foundations/
+src/content/docs/01_governance/
+src/content/docs/02_ai_standards/
+src/content/docs/03_quantum_standards/
+src/content/docs/04_risk_framework/
+src/content/docs/05_audit_and_assurance/
+src/content/docs/06_case_studies/
+src/content/docs/99_interpretive_notes/
+src/content/docs/meta/

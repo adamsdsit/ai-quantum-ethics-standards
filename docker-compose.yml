@@ -1,0 +1,19 @@
+services:
+  site-dev:
+    image: node:20-alpine
+    working_dir: /repo/site
+    command: sh -lc "npm install && npm run dev"
+    ports:
+      - "4321:4321"
+    volumes:
+      - ./:/repo
+      - /repo/site/node_modules
+
+  site-build:
+    image: node:20-alpine
+    working_dir: /repo/site
+    command: sh -lc "npm install && npm run build"
+    volumes:
+      - ./:/repo
+      - /repo/site/node_modules
+

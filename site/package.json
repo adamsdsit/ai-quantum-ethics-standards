@@ -1,0 +1,19 @@
+{
+  "name": "ai-quantum-ethics-standards-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync_docs.mjs",
+    "dev": "node scripts/sync_docs.mjs && astro dev --host 0.0.0.0",
+    "build": "node scripts/sync_docs.mjs && astro build",
+    "preview": "astro preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.32.0",
+    "astro": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
