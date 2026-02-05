@@ -6,6 +6,21 @@
   margin: 1.5rem 0 2.5rem;
 }
 
+.diagram-inline-wrap {
+  margin: 1.25rem 0 2rem;
+}
+
+.diagram-inline {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid rgba(109, 40, 217, 0.25);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
 .diagram-link {
   display: block;
   cursor: zoom-in;
