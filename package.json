@@ -1,0 +1,15 @@
+{
+  "name": "ai-quantum-ethics-standards",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "cd site && npm ci && npm run build",
+    "dev": "cd site && npm install && npm run dev",
+    "preview": "cd site && npm ci && npm run preview",
+    "sync": "cd site && npm run sync"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

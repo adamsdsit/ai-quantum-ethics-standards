@@ -48,9 +48,16 @@ Recommended: **Git Integration** (Workers & Pages → Create → Pages → Conne
 
 Suggested settings:
 
-- Root directory: `site`
+- Root directory: `site` (recommended) **or** repo root (supported)
+
+If using root directory `site`:
+
 - Build command: `npm run build`
 - Build output directory: `dist`
+
+If using repo root (Cloudflare default) with install/build as `npm ci && npm run build`:
+
+- no special configuration is required, because the repo-root `package.json` delegates to `site/`
 - Node version: `20` (or current LTS)
 
 Direct deploy (optional):
