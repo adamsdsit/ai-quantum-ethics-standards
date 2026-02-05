@@ -12,6 +12,7 @@ Tier 2 (high-impact societal).
 
 - Transparency: `02_ai_standards/transparency_and_explainability.md`
 - Fairness: `02_ai_standards/fairness_and_justice.md`
+- Healthcare: `02_ai_standards/healthcare_ai.md`
 - Safety: `02_ai_standards/safety.md`
 - Accountability: `02_ai_standards/accountability.md`
 - Consultation: `01_governance/consultation_framework.md`
