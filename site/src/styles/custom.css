@@ -52,3 +52,36 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+.diagram-open-link {
+  font-weight: 600;
+}
+
+.diagram-pan {
+  margin-top: 1rem;
+  max-height: 80vh;
+  overflow: auto;
+  border: 1px solid rgba(109, 40, 217, 0.35);
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: grab;
+}
+
+.diagram-pan img {
+  display: block;
+  width: 1600px;
+  max-width: none;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .diagram-pan img {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .diagram-pan img {
+    width: 900px;
+  }
+}
