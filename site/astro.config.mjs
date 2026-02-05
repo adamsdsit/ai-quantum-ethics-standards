@@ -15,7 +15,7 @@ export default defineConfig({
         {
           label: "Start",
           items: [
-            { label: "Overview", slug: "" },
+            { label: "Overview", slug: "index" },
             { label: "Diagrams", slug: "diagrams" }
           ]
         },
