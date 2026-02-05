@@ -7,6 +7,12 @@ This folder contains a docs UI built with **Astro Starlight** that renders the s
 - **Starlight** is purpose-built for documentation: sidebars, search, multi-section nav, and clean typography.
 - **Astro** is better when you want a fully custom app UI. You can still add custom pages/components inside Starlight later.
 
+## Repository
+
+This site is built from the standards corpus in:
+
+- https://github.com/adamsdsit/ai-quantum-ethics-standards
+
 ## Local (non-Docker)
 
 ```bash
@@ -57,4 +63,3 @@ The site build runs `scripts/sync_docs.mjs` to copy/transform those Markdown fil
 
 - destination: `site/src/content/docs/`
 - assets: `diagrams/rendered/*.svg` → `site/public/diagrams/`
-
