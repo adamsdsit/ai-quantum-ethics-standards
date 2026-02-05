@@ -15,8 +15,8 @@ export default defineConfig({
         {
           label: "Start",
           items: [
-            { label: "Overview", slug: "/" },
-            { label: "Diagrams", slug: "/diagrams/" }
+            { label: "Overview", slug: "" },
+            { label: "Diagrams", slug: "diagrams" }
           ]
         },
         { label: "Foundations", autogenerate: { directory: "00_foundations" } },
