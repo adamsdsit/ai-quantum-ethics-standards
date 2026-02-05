@@ -3,57 +3,40 @@ direction: right
 title: "Using the Standards (Apply to a System)"
 
 style: {
-  fill: "#0f172a"
-  stroke: "#334155"
-  font-color: "#e2e8f0"
+  fill: "#F8F5FF"
+  stroke: "#6D28D9"
+  font-color: "#2E1065"
+  font-size: 18
+  stroke-width: 2
 }
 
 start: "Start" {
   shape: circle
-  style: { fill: "#1e293b"; stroke: "#64748b" }
+  style: { fill: "#EDE9FE"; stroke: "#5B21B6" }
 }
 
-foundations: "Read foundations\n- Charter\n- Ethical Axioms\n- Definitions\n- Scope" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+foundations: "Read foundations\n- Charter\n- Ethical Axioms\n- Definitions\n- Scope"
 
-tier: "Classify risk tier\n(Tier 0–3)\n+ tiering record" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+tier: "Classify risk tier\n(Tier 0–3)\n+ tiering record"
 
-controls: "Select controls\nControl Matrix + standards\n(AI / Quantum / Governance)" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+controls: "Select controls\nControl Matrix + standards\n(AI / Quantum / Governance)"
 
-implement: "Implement controls\n- oversight\n- disclosure\n- security\n- monitoring\n- change control" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+implement: "Implement controls\n- oversight\n- disclosure\n- security\n- monitoring\n- change control"
 
-evidence: "Build evidence package\n- reports\n- registers\n- logs\n- runbooks\n- traceability" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+evidence: "Build evidence package\n- reports\n- registers\n- logs\n- runbooks\n- traceability"
 
-assurance: "Assurance\n- audits\n- certification/labeling\n- findings → remediation" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+assurance: "Assurance\n- audits\n- certification/labeling\n- findings → remediation"
 
-operate: "Operate ethically\n- continuous monitoring\n- incident response\n- harm remediation" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+operate: "Operate ethically\n- continuous monitoring\n- incident response\n- harm remediation"
 
-reassess: "Reassess\n- re-tier if scope/capability changes\n- recertify on triggers" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+reassess: "Reassess\n- re-tier if scope/capability changes\n- recertify on triggers"
 
-end: "Steady-state\n(or decommission)\n- sunset triggers\n- safe shutdown" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+end: "Steady-state\n(or decommission)\n- sunset triggers\n- safe shutdown"
 
 start -> foundations -> tier -> controls -> implement -> evidence -> assurance -> operate -> reassess -> end
 
 refs: "Key references\n(non-exhaustive)\n\n00_foundations/ethical_axioms.md\n04_risk_framework/risk_classification.md\n04_risk_framework/control_matrix.md\n05_audit_and_assurance/audit_methods.md\n05_audit_and_assurance/monitoring_and_incident_response.md\n05_audit_and_assurance/certification_and_labeling.md" {
-  style: { fill: "#0b1220"; stroke: "#64748b"; font-color: "#e2e8f0" }
+  style: { fill: "#F1F5F9"; stroke: "#94A3B8"; font-color: "#334155"; font-size: 16 }
 }
 
 controls -> refs: { style.stroke-dash: 4 }
-

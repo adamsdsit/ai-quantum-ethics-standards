@@ -3,52 +3,38 @@ direction: right
 title: "Change Control + Releases (Versioning Discipline)"
 
 style: {
-  fill: "#0f172a"
-  stroke: "#334155"
-  font-color: "#e2e8f0"
+  fill: "#F8F5FF"
+  stroke: "#6D28D9"
+  font-color: "#2E1065"
+  font-size: 18
+  stroke-width: 2
 }
 
 start: "Start: propose change\n(Issue/PR)" {
   shape: circle
-  style: { fill: "#1e293b"; stroke: "#64748b" }
+  style: { fill: "#EDE9FE"; stroke: "#5B21B6" }
 }
 
-classify: "Classify change\nMAJOR / MINOR / PATCH\n+ tier impact" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+classify: "Classify change\nMAJOR / MINOR / PATCH\n+ tier impact"
 
 review_gate: "Review intensity?" {
   shape: diamond
-  style: { fill: "#0b1220"; stroke: "#94a3b8" }
+  style: { fill: "#E9D5FF"; stroke: "#5B21B6" }
 }
 
-patch: "PATCH\n- editor/clarity\n- no meaning change" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+patch: "PATCH\n- editor/clarity\n- no meaning change"
 
-minor: "MINOR\n- new standard\n- non-breaking requirements\n- cross-link updates" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+minor: "MINOR\n- new standard\n- non-breaking requirements\n- cross-link updates"
 
-major: "MAJOR\n- axioms or risk philosophy\n- breaking compliance\n- public rationale\n+ migration guidance" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+major: "MAJOR\n- axioms or risk philosophy\n- breaking compliance\n- public rationale\n+ migration guidance"
 
-merge: "Merge\n+ decision record" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+merge: "Merge\n+ decision record"
 
-tag: "Tag release\nvX.Y.Z" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+tag: "Tag release\nvX.Y.Z"
 
-notes: "Publish release notes\n- normative deltas\n- deprecations/sunsets\n- migration notes" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+notes: "Publish release notes\n- normative deltas\n- deprecations/sunsets\n- migration notes"
 
-maintenance: "Post-release maintenance\n- update crosswalks\n- update diagrams/docs\n- track issues" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+maintenance: "Post-release maintenance\n- update crosswalks\n- update diagrams/docs\n- track issues"
 
 start -> classify -> review_gate
 review_gate -> patch: "PATCH"
@@ -62,8 +48,7 @@ major -> merge
 merge -> tag -> notes -> maintenance
 
 refs: "Key references\n\nVERSIONING.md\n01_governance/governance_model.md\nCONTRIBUTING.md\nETHICAL_TRACEABILITY.md" {
-  style: { fill: "#0b1220"; stroke: "#64748b"; font-color: "#e2e8f0" }
+  style: { fill: "#F1F5F9"; stroke: "#94A3B8"; font-color: "#334155"; font-size: 16 }
 }
 
 classify -> refs: { style.stroke-dash: 4 }
-

@@ -3,68 +3,46 @@ direction: right
 title: "Contributing to the Corpus (Write + Review + Release)"
 
 style: {
-  fill: "#0f172a"
-  stroke: "#334155"
-  font-color: "#e2e8f0"
+  fill: "#F8F5FF"
+  stroke: "#6D28D9"
+  font-color: "#2E1065"
+  font-size: 18
+  stroke-width: 2
 }
 
 start: "Start" {
   shape: circle
-  style: { fill: "#1e293b"; stroke: "#64748b" }
+  style: { fill: "#EDE9FE"; stroke: "#5B21B6" }
 }
 
-pick: "Pick contribution type\n- new standard\n- modify requirement\n- governance/policy\n- case study\n- clarification" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+pick: "Pick contribution type\n- new standard\n- modify requirement\n- governance/policy\n- case study\n- clarification"
 
-axioms: "Map to Ethical Axioms\n(A1–A7)\n+ explain intent" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+axioms: "Map to Ethical Axioms\n(A1–A7)\n+ explain intent"
 
-tier: "State tier impact\n(Tier 0–3)\n+ affected files" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+tier: "State tier impact\n(Tier 0–3)\n+ affected files"
 
-draft: "Draft/Update document\nUse template\nKeep requirements testable" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+draft: "Draft/Update document\nUse template\nKeep requirements testable"
 
-trace: "Add traceability\nRequirement → Axiom → Evidence\n(ET mandatory)" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+trace: "Add traceability\nRequirement → Axiom → Evidence\n(ET mandatory)"
 
-crosslinks: "Update cross-links\n(e.g., Control Matrix,\nCrosswalk, README)" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+crosslinks: "Update cross-links\n(e.g., Control Matrix,\nCrosswalk, README)"
 
-version: "Apply change control\n- changelog\n- MAJOR/MINOR/PATCH intent\n- migration notes if needed" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+version: "Apply change control\n- changelog\n- MAJOR/MINOR/PATCH intent\n- migration notes if needed"
 
-pr: "Open PR / Issue\nInclude:\n- axiom mapping\n- tier impact\n- evidence expectations\n- risks + limitations" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+pr: "Open PR / Issue\nInclude:\n- axiom mapping\n- tier impact\n- evidence expectations\n- risks + limitations"
 
 review_gate: "Review intensity?" {
   shape: diamond
-  style: { fill: "#0b1220"; stroke: "#94a3b8" }
+  style: { fill: "#E9D5FF"; stroke: "#5B21B6" }
 }
 
-review_low: "Tier 0–1 review\n- clarity + auditability\n- maintainer + reviewer" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+review_low: "Tier 0–1 review\n- clarity + auditability\n- maintainer + reviewer"
 
-review_high: "Tier 2–3 review\n- multi-review\n- affected-party input\n- dual-use/systemic checks\n- independence where needed" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+review_high: "Tier 2–3 review\n- multi-review\n- affected-party input\n- dual-use/systemic checks\n- independence where needed"
 
-merge: "Merge\n+ decision record" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+merge: "Merge\n+ decision record"
 
-release: "Release\n- tag version\n- publish notes\n- update crosswalks as needed" {
-  style: { fill: "#111827"; stroke: "#475569" }
-}
+release: "Release\n- tag version\n- publish notes\n- update crosswalks as needed"
 
 start -> pick -> axioms -> tier -> draft -> trace -> crosslinks -> version -> pr -> review_gate
 review_gate -> review_low: "Tier 0–1"
@@ -74,8 +52,7 @@ review_high -> merge
 merge -> release
 
 refs: "Key references\n(non-exhaustive)\n\n00_foundations/standard_template.md\nETHICAL_TRACEABILITY.md\nVERSIONING.md\n01_governance/governance_model.md\nCONTRIBUTING.md" {
-  style: { fill: "#0b1220"; stroke: "#64748b"; font-color: "#e2e8f0" }
+  style: { fill: "#F1F5F9"; stroke: "#94A3B8"; font-color: "#334155"; font-size: 16 }
 }
 
 draft -> refs: { style.stroke-dash: 4 }
-
