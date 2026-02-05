@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cd site && npm ci && npm run build",
+    "build": "cd site && npm ci && npm run build && cd .. && rm -rf dist && cp -R site/dist dist",
     "dev": "cd site && npm install && npm run dev",
     "preview": "cd site && npm ci && npm run preview",
     "sync": "cd site && npm run sync"
@@ -12,4 +12,3 @@
     "node": ">=18"
   }
 }
-
