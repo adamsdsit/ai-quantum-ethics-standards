@@ -77,7 +77,8 @@ async function writeDoc(destPath, sourcePath, rawMarkdown) {
 
   // Starlight reads optional `sidebar.hidden`. Some versions assume `sidebar` exists,
   // so we include an empty object to avoid undefined access in navigation generation.
-  const out = `---\ntitle: ${JSON.stringify(inferredTitle)}\nsidebar: {}\n---\n\n${body}\n`;
+  // Starlight head merging also expects an array; include an empty `head` to avoid undefined access.
+  const out = `---\ntitle: ${JSON.stringify(inferredTitle)}\nsidebar: {}\nhead: []\n---\n\n${body}\n`;
   await fs.mkdir(path.dirname(destPath), { recursive: true });
   await fs.writeFile(destPath, out, "utf8");
 }

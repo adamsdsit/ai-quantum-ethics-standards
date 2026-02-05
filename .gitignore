@@ -2,3 +2,12 @@
 Thumbs.db
 .idea/
 .vscode/
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+.npmrc
+*.pem
+*.key
+*.p12
