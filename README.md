@@ -29,6 +29,7 @@ This corpus uses the normative terms **MUST**, **SHOULD**, and **MAY** as descri
 - `04_risk_framework/` — risk tiers and control matrix
 - `05_audit_and_assurance/` — audit methods, metrics, certification
 - `06_case_studies/` — worked examples to stress-test standards
+- Policies and meta-docs: `VERSIONING.md`, `ETHICAL_TRACEABILITY.md`, `ESCALATION_AND_PAUSE.md`, `CROSSWALK_NIST_ISO.md`, `CHARTER.md`, `FAILURE_MODES.md`, `PROMPT_TEMPLATES.md`
 
 ## Contributing
 
