@@ -5,6 +5,7 @@ const docs = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    draft: z.boolean().default(false),
     sidebar: z
       .object({
         hidden: z.boolean().optional(),
