@@ -27,4 +27,8 @@ Each standard document should follow the template in `00_foundations/standard_te
 
 ## Visual Guide
 
-See `diagrams/use_and_contribute.d2` for a high-level flow of how to use the corpus and how to contribute changes.
+See:
+
+- `diagrams/use_flow.d2` (how to apply the corpus to a system)
+- `diagrams/contribute_flow.d2` (how to propose, review, and release changes)
+- `diagrams/use_and_contribute.d2` (combined overview)
