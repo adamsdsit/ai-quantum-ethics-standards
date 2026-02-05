@@ -15,6 +15,7 @@ This matrix links core control domains to tiers and to standard documents.
 | Bias/Fairness | SHOULD | SHOULD | MUST | MUST | `02_ai_standards/fairness_and_justice.md` |
 | Safety & Security | SHOULD | MUST | MUST | MUST | `02_ai_standards/safety.md` |
 | Accountability & Traceability | SHOULD | MUST | MUST | MUST | `02_ai_standards/accountability.md` |
+| Privacy & Non-Inference | SHOULD | MUST | MUST | MUST | `02_ai_standards/privacy_and_non_inference.md` |
 | Consultation | SHOULD | SHOULD | MUST | MUST | `01_governance/consultation_framework.md` |
 | Crypto Destabilization | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/cryptographic_and_security_risk.md` |
 | Dual-Use Governance | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/national_security.md`, `03_quantum_standards/research_limits.md` |
