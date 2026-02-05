@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "sync": "node scripts/sync_docs.mjs",
-    "dev": "node scripts/sync_docs.mjs && astro dev --host 0.0.0.0",
-    "build": "node scripts/sync_docs.mjs && astro build",
-    "preview": "astro preview --host 0.0.0.0"
+    "dev": "npm run sync && astro dev --host 0.0.0.0 --port 4321",
+    "build": "npm run sync && astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 4321"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.32.0",
@@ -16,4 +16,3 @@
     "node": ">=18"
   }
 }
-
