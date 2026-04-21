@@ -9,8 +9,8 @@
     "preview": "astro preview --host 0.0.0.0 --port 4321"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.32.0",
-    "astro": "^5.18.1"
+    "@astrojs/starlight": "^0.38.3",
+    "astro": "^6.1.8"
   },
   "engines": {
     "node": ">=18"
