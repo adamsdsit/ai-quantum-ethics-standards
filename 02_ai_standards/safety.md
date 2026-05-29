@@ -63,3 +63,13 @@ Safety is a lifecycle property. Tier 2–3 systems require verifiable engineerin
 
 - v0.1: Initial draft.
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| AI-S-1 | A5 | risk assessment artifact, residual risk statement |
+| AI-S-2 | A4, A5 | red-team plans, findings, remediation evidence |
+| AI-S-3 | A4 | release/version logs, safety sign-offs |
+| AI-S-4 | A7 | incident runbooks, rollback tests, notification templates |
+| AI-S-5 | A5, A7 | access controls, monitoring reports, release justification |

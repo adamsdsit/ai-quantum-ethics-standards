@@ -51,3 +51,17 @@ This file defines a minimum metric set. Requirements and constraints on ethical 
 - metric definitions and calculation methods
 - dashboards and time-series exports
 - decision memos showing how metrics trigger action
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Transparency metrics | A4 | disclosure-packet coverage, debt-register age |
+| Fairness metrics | A1, A3 | disaggregated performance, contestation/outcome rates |
+| Safety metrics | A4, A7 | red-team findings, MTTD/MTTR, rollback test rate |
+| Crypto-risk metrics | A4 | inventory completeness, PQ transition progress |
+| Environmental metrics | A7 | energy per job, change-impact assessments |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

@@ -60,7 +60,7 @@ AQ-4 (Limits on Delegation and Automation). Convergent systems **MUST NOT** be u
 - eliminate meaningful human review for high-impact actions, or
 - create “optimizer said so” decision abdication,
 
-without controls consistent with `02_ai_standards/autonomy_and_human_control.md` and `03_quantum_standards/optimization_ethics.md`.
+without controls consistent with `02_ai_standards/autonomy_and_human_control.md` and `03_quantum_standards/optimization_and_power_asymmetry.md`.
 
 AQ-5 (Operational Separations and Guardrails). For Tier 2–3 convergent systems, operators **MUST** implement guardrails such as:
 

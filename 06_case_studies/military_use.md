@@ -11,8 +11,8 @@ Tier 3 (critical / existential), due to rights risk, escalation potential, and d
 ## Applicable Standards
 
 - Dual-use and security: `03_quantum_standards/national_security.md`
-- Research limits / moratorium: `03_quantum_standards/research_limits.md`
-- Optimization ethics: `03_quantum_standards/optimization_ethics.md`
+- Research limits / moratorium: `03_quantum_standards/research_and_disclosure.md`
+- Optimization ethics: `03_quantum_standards/optimization_and_power_asymmetry.md`
 - AI safety/accountability: `02_ai_standards/safety.md`, `02_ai_standards/accountability.md`
 - Consultation: `01_governance/consultation_framework.md`
 - Certification/audit: `05_audit_and_assurance/*`

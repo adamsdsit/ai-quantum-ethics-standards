@@ -71,7 +71,7 @@ This document identifies how ethical AI and quantum computing (QC) standards can
 
 - operational test requirements (rollback drills, tabletop exercises)
 - traceability linking approvals to deployments (`02_ai_standards/accountability.md`)
-- moratorium-capable governance for Tier 3 (`03_quantum_standards/research_limits.md`, `ESCALATION_AND_PAUSE.md`)
+- moratorium-capable governance for Tier 3 (`03_quantum_standards/research_and_disclosure.md`, `ESCALATION_AND_PAUSE.md`)
 
 ## Compliance Evidence (For This Document)
 

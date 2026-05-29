@@ -11,7 +11,7 @@ Tier 3 (systemic harm potential).
 ## Applicable Standards
 
 - Cryptographic risk: `03_quantum_standards/cryptographic_and_security_risk.md`
-- Research limits (if conducting internal QC work): `03_quantum_standards/research_limits.md`
+- Research limits (if conducting internal QC work): `03_quantum_standards/research_and_disclosure.md`
 - Audit/certification: `05_audit_and_assurance/*`
 
 ## Key Risks

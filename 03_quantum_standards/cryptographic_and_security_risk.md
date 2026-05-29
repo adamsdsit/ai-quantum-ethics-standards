@@ -60,3 +60,13 @@ Cryptography is a systemic dependency. The goal is not to freeze innovation, but
 ## 8. Change Log
 
 - v0.1: Initial draft (filename: `03_quantum_standards/cryptographic_and_security_risk.md`).
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Q-C-1 | A4 | cryptographic inventory |
+| Q-C-2 | A4, A7 | post-quantum transition plan, milestone tracking |
+| Q-C-3 | A3, A7 | harvest-now risk assessment, compensating controls |
+| Q-C-4 | A4 | claim substantiation, threat-model statement |
+| Q-C-5 | A3, A7 | dual-use governance review, public-interest justification |

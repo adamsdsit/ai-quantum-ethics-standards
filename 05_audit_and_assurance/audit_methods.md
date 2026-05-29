@@ -41,3 +41,16 @@ AU-4 (Finding Handling). Operators **MUST** track findings to remediation with:
 - auditor independence statement (Tier 3)
 - findings tracker and closure verification
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| AU-1 | A4 | audit evidence repository index |
+| AU-2 | A3, A4 | auditor independence statement (Tier 3) |
+| AU-3 | A4 | audit plans, reports, cadence records |
+| AU-4 | A3 | findings tracker and closure verification |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

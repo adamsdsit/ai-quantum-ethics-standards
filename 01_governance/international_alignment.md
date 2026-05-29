@@ -31,3 +31,14 @@ Maintain a table (to be filled) mapping:
 - Right to non-inference (privacy/control beyond data access)
 - Moratorium-capable governance (Tier 3 trigger conditions)
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Crosswalk maintenance (non-normative) | A4 | crosswalk tables, alignment notes |
+| Novel-concept tracking | A4, A6 | tracked-concept list, conflict-resolution notes |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

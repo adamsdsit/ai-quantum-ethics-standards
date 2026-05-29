@@ -30,6 +30,7 @@ const SOURCE_ROOT_FILES = [
   "FAILURE_MODES.md",
   "PROMPT_TEMPLATES.md",
   "README.md",
+  "SECURITY.md",
   "VERSIONING.md"
 ];
 

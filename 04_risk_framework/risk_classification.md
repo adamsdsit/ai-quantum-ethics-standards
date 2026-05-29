@@ -47,7 +47,7 @@ Typical attributes:
 
 Minimum expectations:
 
-- equity impact assessment (AI-F-3)
+- equity impact assessment (AI-FJ-11)
 - red-teaming and incident readiness (AI-S-2, AI-S-4)
 - contestability and remedy pathways (A3-aligned)
 
@@ -63,7 +63,7 @@ Typical attributes:
 Minimum expectations:
 
 - multi-stakeholder governance review and dual-use controls
-- moratorium-capable governance (Q-R-3)
+- moratorium-capable governance (Q-RD-10)
 - independent audit as a precondition of deployment
 
 ## Classification Criteria (Decision Record)
@@ -85,3 +85,14 @@ If criteria are mixed, classify at the **highest plausible tier** unless a docum
 - periodic reassessment schedule (at least annually for Tier 2–3)
 - triggers for re-tiering (capability change, scale change, incident)
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Tiering decision record | A5, A3 | tiering decision record and approvals |
+| Reassessment & re-tiering | A5, A7 | reassessment schedule, re-tiering triggers |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

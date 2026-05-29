@@ -38,3 +38,17 @@ CF-5. Consultation materials **SHOULD** be published, redacting only what is nec
 - decision memo linking feedback to design/control changes
 - publication/redaction log
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| CF-1 | A6 | consultation plan, stakeholder/role list |
+| CF-2 | A6 | timeline showing pre-design engagement |
+| CF-3 | A6, A3 | consultation records, minutes, synthesized feedback |
+| CF-4 | A3 | decision memo, compensating controls |
+| CF-5 | A6 | publication/redaction log |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

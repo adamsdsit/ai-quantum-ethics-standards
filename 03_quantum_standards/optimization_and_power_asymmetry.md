@@ -69,7 +69,7 @@ Q-OPA-5 (Delegation Limits for Strategic and Moral Decisions). Operators **MUST 
 - a contestability and remedy pathway where applicable,
 - safeguards against objective laundering (see Q-OPA-6).
 
-This requirement complements `03_quantum_standards/optimization_ethics.md`.
+This requirement complements `02_ai_standards/autonomy_and_human_control.md`.
 
 Q-OPA-6 (Objective and Constraint Transparency for Review). Tier 2–3 operators **MUST** document optimization objectives, constraints, and proxy variables that materially shape outcomes, and **MUST** make this documentation available to appropriate reviewers (internal governance, auditors, regulators as applicable).
 
@@ -96,6 +96,14 @@ Q-OPA-10 (Anti-Manipulation and Misrepresentation). Operators **MUST NOT** make 
 - task and workload conditions,
 - benchmark assumptions,
 - limitations and uncertainty.
+
+Q-OPA-14 (Constraint Safety and Guardrails). Tier 2–3 operators **MUST** implement constraints and guardrails on optimization objectives and outputs that prevent:
+
+- prohibited discrimination (including via proxy variables),
+- unsafe operational outputs (e.g., violating safety margins or hard limits),
+- objectives or incentives that reward deception or coercion.
+
+Guardrails **MUST** be documented, testable, and enforced before outputs influence Tier 2–3 decisions.
 
 ### SHOULD
 
@@ -151,6 +159,7 @@ Minimum evidence artifacts (as applicable):
 | Q-OPA-6 | A4, A3 | objective/constraint docs, reviewer sign-offs |
 | Q-OPA-7 | A7, A5 | stress tests, scenario analysis, sensitivity reports |
 | Q-OPA-9 | A5, A6 | escalation triggers, pause runbooks, decision records |
+| Q-OPA-14 | A1, A2 | guardrail definitions, constraint tests, prohibited-use enforcement |
 
 ## 8. Known Limitations
 
@@ -177,5 +186,6 @@ Optimization can reshape resource allocation and strategic choices in ways that 
 
 ## Change Log
 
+- v0.2: Consolidated the former `optimization_ethics` standard (Q-O-*) into this canonical standard; added Q-OPA-14 (Constraint Safety and Guardrails) to preserve the constraint-safety requirement.
 - v0.1: Initial draft.
 

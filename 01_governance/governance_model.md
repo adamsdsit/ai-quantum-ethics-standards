@@ -73,3 +73,16 @@ The project **MUST** maintain:
 - a changelog for each standard document
 - reviewer roles/affiliations disclosure (as feasible)
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Append-only decision log | A3, A4 | issue/PR history, decision log |
+| Per-document changelog | A4 | standard-document change logs |
+| Reviewer disclosure | A6 | reviewer roles/affiliations disclosure |
+| Tiered review thresholds | A3, A6 | review records by tier |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

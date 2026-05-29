@@ -62,3 +62,13 @@ Transparency is not a single feature; it is a bundle of artifacts and practices 
 ## 8. Change Log
 
 - v0.1: Initial draft (filename: `02_ai_standards/transparency_and_explainability.md`).
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| AI-T-1 | A4 | disclosure packet artifacts and version history |
+| AI-T-2 | A3, A2 | affected-party notice templates and delivery logs |
+| AI-T-3 | A3 | explanation reports and appeal outcomes (Tier 2–3) |
+| AI-T-4 | A4 | explainability debt register with mitigation tracking |
+| AI-T-5 | A4, A2 | product/UI audits for deception patterns |

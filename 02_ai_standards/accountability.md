@@ -69,3 +69,13 @@ Accountability fails when responsibility is diffuse. Explicit ownership and trac
 
 - v0.1: Initial draft.
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| AI-A-1 | A3 | responsibility matrix (RACI or equivalent) |
+| AI-A-2 | A3, A4 | lifecycle traceability artifacts (tickets, docs, approvals) |
+| AI-A-3 | A3, A4 | audit logging policy and sample log extracts |
+| AI-A-4 | A3 | oversight UI/UX review results, training materials |
+| AI-A-5 | A3 | liability mapping, remediation outcomes |

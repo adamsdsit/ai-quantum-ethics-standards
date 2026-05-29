@@ -58,3 +58,12 @@ National security contexts produce strong incentives for secrecy and speed. This
 
 - v0.1: Initial draft.
 
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Q-N-1 | A5 | dual-use classification record |
+| Q-N-2 | A5, A3 | escalation review, security and human-rights assessment |
+| Q-N-3 | A3, A6 | cross-border legal/sovereignty documentation |
+| Q-N-4 | A3, A5 | non-weaponization guardrails, access controls |

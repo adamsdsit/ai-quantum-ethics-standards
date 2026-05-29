@@ -19,8 +19,8 @@ This matrix links core control domains to tiers and to standard documents.
 | Supply Chain & Provenance | SHOULD | MUST | MUST | MUST | `01_governance/supply_chain_and_provenance.md` |
 | Consultation | SHOULD | SHOULD | MUST | MUST | `01_governance/consultation_framework.md` |
 | Crypto Destabilization | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/cryptographic_and_security_risk.md` |
-| Dual-Use Governance | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/national_security.md`, `03_quantum_standards/research_limits.md` |
-| Moratorium Capability | MAY | MAY | SHOULD | MUST | `03_quantum_standards/research_limits.md` |
+| Dual-Use Governance | SHOULD | SHOULD | MUST (as applicable) | MUST | `03_quantum_standards/national_security.md`, `03_quantum_standards/research_and_disclosure.md` |
+| Moratorium Capability | MAY | MAY | SHOULD | MUST | `03_quantum_standards/research_and_disclosure.md` |
 | Ethical Metrics | SHOULD | SHOULD | MUST | MUST | `04_risk_framework/ethical_metrics.md`, `05_audit_and_assurance/metrics.md` |
 | AI–Quantum Convergence | SHOULD | SHOULD | MUST (as applicable) | MUST (as applicable) | `04_risk_framework/ai_quantum_convergence.md` |
 | Audit & Assurance | MAY | SHOULD | MUST | MUST | `05_audit_and_assurance/*` |
@@ -30,3 +30,13 @@ This matrix links core control domains to tiers and to standard documents.
 
 - “As applicable” means the system plausibly touches the described risk pathway (e.g., quantum capability relevant to crypto security).
 - This matrix is expected to evolve as domain standards become more granular.
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| Control-to-tier mapping (index; non-normative) | A5 | control selection records; per-requirement traceability lives in the linked standards |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

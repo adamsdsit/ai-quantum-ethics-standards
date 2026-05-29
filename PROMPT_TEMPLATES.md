@@ -1,5 +1,10 @@
 # Prompt Templates (for Codex / Code Chat)
 
+> **Status: Internal tooling — non-normative.** This file contains drafting
+> prompts used to generate consistent text. It creates no requirements or
+> obligations and is not part of the normative corpus. In the published site it
+> appears under *Meta*.
+
 This file provides reusable prompts to generate consistent, regulator-ready drafts across the corpus.
 
 ## Master Instruction (Use Once Per Session)

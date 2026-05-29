@@ -42,3 +42,15 @@ CE-3 (Revocation). Certifications **MUST** be revocable upon:
 - certification report with scope and exclusions
 - auditor attestations and evidence index
 - revocation policy and historical revocation log (if any)
+
+## Traceability Table (Requirement → Axiom → Evidence)
+
+| Requirement / Control | Axiom(s) | Evidence Artifacts |
+| --- | --- | --- |
+| CE-1 | A4 | certification report with scope and exclusions |
+| CE-2 | A3, A4 | auditor attestations, dual-use review evidence |
+| CE-3 | A4, A3 | revocation policy and historical revocation log |
+
+## Change Log
+
+- v0.2: Added Traceability Table and Change Log to conform to `ETHICAL_TRACEABILITY.md` and `VERSIONING.md`.

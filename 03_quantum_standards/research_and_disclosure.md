@@ -83,6 +83,14 @@ Q-RD-6 (Publication and Openness Decisions). Decisions to publish or open-source
 - mitigation plan and exposure model,
 - governance sign-off by an accountable authority.
 
+Q-RD-10 (Moratorium Capability). For Tier 3-relevant research, governance **MUST** maintain the ability to pause or constrain release or deployment when trigger conditions are met, including:
+
+- credible evidence of catastrophic or irreversible misuse potential,
+- inability to implement effective access controls,
+- misalignment between capability and societal readiness.
+
+Moratorium triggers, decision authority, and resumption criteria **MUST** be defined consistent with `ESCALATION_AND_PAUSE.md`.
+
 ### SHOULD
 
 Q-RD-7 (Pre-Registration for High-Risk Research). For research with credible Tier 3 dual-use potential, organizations **SHOULD** pre-register:
@@ -108,7 +116,7 @@ with redactions limited to safety, security, or legal constraints.
 - **Tier 0**: encourage documentation and responsible communication; avoid releasing artifacts that materially increase misuse capability without controls.
 - **Tier 1**: basic dual-use screening and truthful claims about capabilities.
 - **Tier 2**: formal dual-use assessment for material capability changes and controlled release practices where misuse is plausible.
-- **Tier 3**: requires responsible disclosure, strict artifact security, and governance sign-off; pause/moratorium readiness may be required when harms are catastrophic or irreversible (`03_quantum_standards/research_limits.md`, `ESCALATION_AND_PAUSE.md`).
+- **Tier 3**: requires responsible disclosure, strict artifact security, and governance sign-off; pause/moratorium readiness may be required when harms are catastrophic or irreversible (see Q-RD-10 and `ESCALATION_AND_PAUSE.md`).
 
 ## 7. Compliance Evidence
 
@@ -130,6 +138,7 @@ Minimum evidence artifacts (as applicable):
 | Q-RD-4 | A4 | access logs, integrity controls |
 | Q-RD-5 | A4 | benchmark methods, claim substantiation |
 | Q-RD-6 | A5, A6 | governance sign-offs, exposure model |
+| Q-RD-10 | A5, A7 | pause/constraint policy, moratorium triggers, resumption criteria |
 
 ## 8. Known Limitations
 
@@ -155,5 +164,6 @@ Quantum research can alter systemic security and power dynamics. Responsible dis
 
 ## Change Log
 
+- v0.2: Consolidated the former `research_limits` standard (Q-R-*) into this canonical standard; added Q-RD-10 (Moratorium Capability) to preserve the moratorium requirement.
 - v0.1: Initial draft.
 
