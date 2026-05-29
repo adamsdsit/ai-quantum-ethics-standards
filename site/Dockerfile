@@ -1,4 +1,4 @@
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 
 WORKDIR /repo
 
@@ -7,10 +7,10 @@ COPY . .
 
 WORKDIR /repo/site
 
-RUN npm install
+RUN npm ci
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:1.27-alpine
 COPY --from=build /repo/site/dist /usr/share/nginx/html
 EXPOSE 80
 

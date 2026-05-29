@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Holistic Review — ai-quantum-ethics-standards</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#161c24; --ink:#e6edf3; --muted:#9aa7b4;
+    --line:#2a323d; --accent:#5aa9e6; --code:#0b0f14;
+    --hi:#ff6b6b; --med:#ffb84d; --low:#8bd17c; --good:#5fd0c0;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f7f9fb; --panel:#fff; --ink:#1a2129; --muted:#5a6b7b;
+      --line:#e1e7ee; --accent:#1d6fb8; --code:#f0f3f7; --hi:#c0392b; --med:#b9770e; --low:#3f8f4f; --good:#1f8a7a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:880px;margin:0 auto;padding:48px 24px 96px;}
+  h1{font-size:30px;line-height:1.2;margin:0 0 4px;letter-spacing:-.01em}
+  h2{font-size:22px;margin:44px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:17px;margin:26px 0 6px}
+  p{margin:10px 0}
+  a{color:var(--accent)}
+  code{background:var(--code);padding:1.5px 6px;border-radius:5px;font-size:13.5px;
+    font-family:"SF Mono",SFMono-Regular,ui-monospace,Menlo,Consolas,monospace}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow:auto;font-size:13px}
+  pre code{background:none;padding:0}
+  ul{margin:10px 0;padding-left:22px}
+  li{margin:5px 0}
+  .meta{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .lede{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:16px 20px;margin:18px 0}
+  .verdict{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 20px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;
+    padding:2px 8px;border-radius:999px;color:#0b0f14;white-space:nowrap}
+  .t-hi{background:var(--hi)} .t-med{background:var(--med)} .t-low{background:var(--low)} .t-good{background:var(--good)}
+  .finding{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 20px 14px;margin:16px 0}
+  .finding h3{display:flex;align-items:center;gap:10px}
+  .muted{color:var(--muted)}
+  .small{font-size:13.5px}
+  footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Holistic Review — <code>ai-quantum-ethics-standards</code></h1>
+  <p class="meta">
+    Repository: <a href="https://github.com/adamsdsit/ai-quantum-ethics-standards">adamsdsit/ai-quantum-ethics-standards</a><br/>
+    Reviewed 2026-05-30 · commit <code>512d152</code> (HEAD, 57 commits) · Scope: content, structure &amp; publishing site
+  </p>
+
+  <h2>1. Executive summary</h2>
+  <div class="lede">
+    A genuinely strong, coherent corpus of AI and quantum-computing ethics standards, written in the register of an
+    international standards body — RFC&nbsp;2119 normative language, axiom→requirement→evidence traceability, risk tiering,
+    audit &amp; certification, case studies, and an Astro Starlight site to publish it. The conceptual architecture
+    (Axioms → Governance → Technical Standards → Controls → Assurance) is clear and actually followed. The best documents
+    (<code>autonomy_and_human_control</code>, <code>supply_chain_and_provenance</code>, <code>fairness_and_justice</code>)
+    would not look out of place in a real ISO/IEC working draft.
+  </div>
+  <p>The central problem is <strong>internal consistency, not quality</strong>. The corpus mandates structures in its own
+  normative documents — a Traceability Table per standard, a Change Log per standard, one canonical document per topic —
+  and then fails those mandates in roughly a third of its own files. Two visible "generations" of documents coexist in the
+  quantum section, creating duplicate standards with conflicting requirement IDs. And the site has two config choices likely
+  to fail to build against the pinned Starlight version.</p>
+  <div class="verdict">
+    <strong>Overall verdict:</strong> high-quality content, ~85% polished, held back by self-consistency gaps and a few
+    fixable build risks. Nothing is deep; most is an afternoon of cleanup. The single most important fix:
+    <strong>the corpus violates its own MUST requirements</strong> — for a document whose explicit purpose is to prevent
+    "paper governance" and "ethics washing," that is the gap most likely to undermine its credibility with the regulators
+    and auditors it is courting.
+  </div>
+
+  <h2>2. What's strong (keep doing this)</h2>
+  <ul>
+    <li><strong>Clear normative architecture.</strong> The five-layer stack is stated and followed; risk tiers (0–3) are defined once and referenced consistently.</li>
+    <li><strong>Traceability as a first-class idea.</strong> <code>ETHICAL_TRACEABILITY.md</code> turns "ethics" into an auditable requirement→axiom→evidence mapping and explicitly targets ethics washing. Where the tables exist, they're good.</li>
+    <li><strong>The fuller standards are rigorous.</strong> <code>emergency_powers_and_safeguards</code>, <code>independent_ethics_review</code>, <code>supply_chain_and_provenance</code>, <code>environmental_and_resource_ethics</code>, <code>autonomy_and_human_control</code>, <code>fairness_and_justice</code>, <code>healthcare_ai</code>, <code>monitoring_and_incident_response</code>, <code>certification_and_labeling</code>, <code>ethical_metrics</code> are consistent and evidence-oriented.</li>
+    <li><strong>Honest self-awareness.</strong> <code>FAILURE_MODES.md</code> and <code>founders_commentary.md</code> pre-empt the obvious critiques.</li>
+    <li><strong>Healthy site hygiene.</strong> Dependabot is active, secrets handling is documented, and the sync script resolves paths relative to itself.</li>
+    <li><strong>Clean link integrity.</strong> Every backtick-quoted <code>*.md</code> path in the corpus resolves to a real file.</li>
+  </ul>
+
+  <h2>3. Findings by priority</h2>
+
+  <div class="finding">
+    <h3><span class="tag t-hi">HIGH</span> The corpus does not comply with its own requirements</h3>
+    <p class="small"><strong>3.1 Missing Traceability Tables.</strong> <code>ETHICAL_TRACEABILITY.md</code> says each standard in <code>01_</code>–<code>05_</code> <strong>MUST</strong> include a Traceability Table. 15 do not:</p>
+<pre><code>01_governance/consultation_framework.md          02_ai_standards/transparency_and_explainability.md
+01_governance/governance_model.md                03_quantum_standards/cryptographic_and_security_risk.md
+01_governance/international_alignment.md          03_quantum_standards/national_security.md
+02_ai_standards/accountability.md                03_quantum_standards/optimization_ethics.md
+02_ai_standards/safety.md                        03_quantum_standards/research_limits.md
+04_risk_framework/control_matrix.md              04_risk_framework/risk_classification.md
+05_audit_and_assurance/audit_methods.md          05_audit_and_assurance/certification.md
+05_audit_and_assurance/metrics.md</code></pre>
+    <p class="small"><strong>3.2 Missing Change Logs.</strong> <code>VERSIONING.md</code> says every standard <strong>MUST</strong> keep a Change Log. 8 lack one: <code>consultation_framework</code>, <code>governance_model</code>, <code>international_alignment</code>, <code>control_matrix</code>, <code>risk_classification</code>, <code>audit_methods</code>, <code>certification</code>, <code>metrics</code>.</p>
+    <p class="small muted"><strong>Fix:</strong> either bring these up to the mandated template, or soften the mandate and explicitly exempt index/meta docs. Whatever you choose, the rule and the corpus must agree — a standards body that fails its own conformance check has no answer when an auditor points it out.</p>
+  </div>
+
+  <div class="finding">
+    <h3><span class="tag t-hi">HIGH</span> Duplicate, competing quantum standards</h3>
+    <p class="small">Two parallel documents per topic, with different requirement-ID schemes and no statement of which is canonical:</p>
+    <table>
+      <tr><th>Topic</th><th>"Light" doc (1st gen)</th><th>"Full" doc (rewrite)</th></tr>
+      <tr><td>Optimization ethics</td><td><code>optimization_ethics.md</code> · <code>Q-O-*</code> · 64 ln</td><td><code>optimization_and_power_asymmetry.md</code> · <code>Q-OPA-*</code> · 181 ln</td></tr>
+      <tr><td>Research / disclosure</td><td><code>research_limits.md</code> · <code>Q-R-*</code> · 60 ln</td><td><code>research_and_disclosure.md</code> · <code>Q-RD-*</code> · 159 ln</td></tr>
+    </table>
+    <p class="small">The control matrix, case studies, and <code>FAILURE_MODES.md</code> all reference the <em>light</em> versions, leaving the fuller, more rigorous versions orphaned from navigation. A reader can't tell which document is authoritative.</p>
+    <p class="small muted"><strong>Fix:</strong> pick one canonical doc per topic (keep the fuller ones), migrate unique requirements, repoint all references to the surviving IDs, and delete/redirect the loser. This is a normative ID change — version it accordingly.</p>
+  </div>
+
+  <div class="finding">
+    <h3><span class="tag t-med">MED</span> Stale requirement reference</h3>
+    <p class="small"><code>risk_classification.md</code> cites <strong><code>AI-F-3</code></strong> ("equity impact assessment"), but the fairness standard was renamed to <code>fairness_and_justice.md</code> with <code>AI-FJ-*</code> IDs; the equity impact assessment is now <strong><code>AI-FJ-11</code></strong>. <code>AI-F-3</code> exists nowhere in the corpus.</p>
+    <p class="small muted"><strong>Fix:</strong> update to <code>AI-FJ-11</code> and add an ID-resolution check in CI (see §4.2).</p>
+  </div>
+
+  <div class="finding">
+    <h3><span class="tag t-med">MED</span> No LICENSE file</h3>
+    <p class="small">For a corpus whose stated ambition is global adoption and submission to standards bodies, reuse/redistribution/contribution terms are legally undefined — a real blocker for institutional adoption and awkward given the emphasis on provenance and rights elsewhere.</p>
+    <p class="small muted"><strong>Fix:</strong> add an explicit license — <strong>CC BY 4.0</strong> (or CC BY-SA) for the standards text; dual-license with MIT for <code>site/</code> code if you want code terms to differ.</p>
+  </div>
+
+  <div class="finding">
+    <h3><span class="tag t-med">MED</span> Site/build configuration risks <span class="muted small">(verify — no build was run)</span></h3>
+    <p class="small">Both likely fail or misbehave on the pinned Starlight <code>^0.32.0</code>:</p>
+    <p class="small"><strong>1. Deprecated <code>social</code> object form</strong> in <code>astro.config.mjs</code>. Starlight moved <code>social</code> to an array of link objects around 0.32:</p>
+<pre><code>social: [{ icon: "github", label: "GitHub",
+  href: "https://github.com/adamsdsit/ai-quantum-ethics-standards" }]</code></pre>
+    <p class="small"><strong>2. Hand-rolled <code>docs</code> collection</strong> in <code>src/content.config.ts</code> uses legacy <code>type: "content"</code> and a bare Zod schema that strips Starlight's frontmatter. Astro 5 + Starlight expects:</p>
+<pre><code>import { docsLoader } from "@astrojs/starlight/loaders";
+import { docsSchema } from "@astrojs/starlight/schema";
+const docs = defineCollection({ loader: docsLoader(), schema: docsSchema() });</code></pre>
+    <p class="small muted"><strong>Fix:</strong> run a clean <code>cd site &amp;&amp; npm ci &amp;&amp; npm run build</code> in CI and resolve whatever these surface.</p>
+  </div>
+
+  <div class="finding">
+    <h3><span class="tag t-low">LOW</span> Repository hygiene &amp; consistency</h3>
+    <ul class="small">
+      <li><strong>No CI</strong> (<code>.github/workflows</code> absent) — yet Dependabot keeps bumping Astro/Starlight with no automated build to catch a bad bump.</li>
+      <li><strong>No community-health files</strong> (CODE_OF_CONDUCT, issue/PR templates) — at odds with a participation-first governance model.</li>
+      <li><strong>README map incomplete</strong> — omits e.g. <code>non_derogation_and_red_lines</code>, <code>supply_chain_and_provenance</code>, <code>environmental_and_resource_ethics</code>, <code>consultation_framework</code>, the full <code>02_ai_standards/</code> list, and <code>SECURITY.md</code>.</li>
+      <li><strong>Two-tier template inconsistency</strong> (<code>## Applicability</code> vs <code>## 3. Scope</code>; 9-section template vs lighter headers) reads as unfinished. Aligning all standards to <code>standard_template.md</code> fixes this and §3.1/§3.2 at once.</li>
+      <li><strong><code>PROMPT_TEMPLATES.md</code></strong> is internal scaffolding shipped in a public, regulator-facing corpus — consider moving under <code>meta/</code>.</li>
+    </ul>
+  </div>
+
+  <h2>4. Guardrails so issues don't recur</h2>
+  <p><strong>4.1 Add CI</strong> (<code>.github/workflows/ci.yml</code>): on every PR, install <code>site/</code>, run <code>astro build</code>, fail on errors. Catches the <code>social</code>/collection issues and bad Dependabot bumps.</p>
+  <p><strong>4.2 Add a self-compliance check</strong> (~30 lines, in CI): assert every <code>*.md</code> in <code>01_</code>–<code>05_</code> contains a Traceability Table and Change Log, and that every <code>…-N</code> requirement reference resolves to a defined ID (would have caught <code>AI-F-3</code>). This makes the corpus mechanically verify the very discipline it preaches.</p>
+
+  <h2>5. Priority checklist</h2>
+  <table>
+    <tr><th>#</th><th>Priority</th><th>Action</th></tr>
+    <tr><td>1</td><td><span class="tag t-hi">HIGH</span></td><td>Resolve quantum duplicates: one canonical doc per topic, migrate requirements, repoint references, delete/redirect the loser.</td></tr>
+    <tr><td>2</td><td><span class="tag t-hi">HIGH</span></td><td>Add missing Traceability Tables (15) &amp; Change Logs (8) — or formally exempt index/meta docs and align the mandate.</td></tr>
+    <tr><td>3</td><td><span class="tag t-med">MED</span></td><td>Fix stale reference <code>AI-F-3</code> → <code>AI-FJ-11</code> in <code>risk_classification.md</code>.</td></tr>
+    <tr><td>4</td><td><span class="tag t-med">MED</span></td><td>Add a LICENSE (CC BY 4.0 text; MIT for <code>site/</code> code if split).</td></tr>
+    <tr><td>5</td><td><span class="tag t-med">MED</span></td><td>Verify site builds; migrate <code>social</code> to array form and the <code>docs</code> collection to Starlight loader/schema.</td></tr>
+    <tr><td>6</td><td><span class="tag t-low">LOW</span></td><td>Add CI (build + link check + self-compliance script).</td></tr>
+    <tr><td>7</td><td><span class="tag t-low">LOW</span></td><td>Refresh README map; add community-health files; relocate <code>PROMPT_TEMPLATES.md</code>; align docs to the template.</td></tr>
+  </table>
+
+  <h2>6. Method &amp; caveats</h2>
+  <ul class="small">
+    <li>All 40+ corpus Markdown documents and the <code>site/</code> config/scripts were read. Cross-reference, ID-integrity, template-conformance, and file-existence checks were run mechanically (grep/find) against commit <code>512d152</code>.</li>
+    <li><strong>No build was executed</strong> — §3's site findings are reasoned from the pinned versions and Starlight's known API changes; verify with a clean CI build before acting.</li>
+    <li>Confirm Starlight specifics against the exact resolved versions in <code>site/package-lock.json</code> at build time.</li>
+  </ul>
+
+  <footer>Holistic review generated for Dr. Adams · sources: working tree at <code>512d152</code>.</footer>
+</div>
+</body>
+</html>

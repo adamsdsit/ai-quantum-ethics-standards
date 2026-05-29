@@ -9,6 +9,6 @@
     "sync": "cd site && npm run sync"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.3.0"
   }
 }
